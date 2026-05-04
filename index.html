@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Moonlit Ink - Retro Neon</title>
+    <style>
+        body {
+            background-color: #0d0208;
+            color: #fce7f3;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .neon-text {
+            color: #fff;
+            text-shadow: 0 0 7px #bc13fe, 0 0 10px #bc13fe, 0 0 21px #bc13fe;
+            text-transform: uppercase;
+            font-size: 3.5rem;
+            margin-top: 60px;
+            letter-spacing: 5px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            padding: 50px;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .coin-card {
+            background: rgba(43, 0, 82, 0.6);
+            border: 2px solid #bc13fe;
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(188, 19, 254, 0.4);
+        }
+
+        .coin-card:hover {
+            box-shadow: 0 0 30px #bc13fe;
+            transform: translateY(-10px);
+            background: rgba(60, 0, 110, 0.8);
+        }
+
+        .bonus-tag {
+            background: #bc13fe;
+            color: #fff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin: 15px 0;
+            color: #fff;
+        }
+
+        .buy-btn {
+            background: transparent;
+            color: #bc13fe;
+            border: 2px solid #bc13fe;
+            padding: 12px 0;
+            margin-top: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .buy-btn:hover {
+            background: #bc13fe;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="neon-text">Moonlit Ink</h1>
+    <p style="color: #bc13fe; font-style: italic;">Select your coin package below</p>
+
+    <div class="container">
+        <!-- Package 100 -->
+        <div class="coin-card">
+            <span class="bonus-tag">+5 BONUS</span>
+            <h3>100 COINS</h3>
+            <div class="price">฿49.00</div>
+            <button class="buy-btn" onclick="location.href='ใส่ลิงก์49บาทตรงนี้'">BUY NOW</button>
+        </div>
+
+        <!-- Package 200 -->
+        <div class="coin-card">
+            <span class="bonus-tag">+15 BONUS</span>
+            <h3>200 COINS</h3>
+            <div class="price">฿99.00</div>
+            <button class="buy-btn" onclick="location.href='ใส่ลิงก์99บาทตรงนี้'">BUY NOW</button>
+        </div>
+
+        <!-- Package 600 -->
+        <div class="coin-card">
+            <span class="bonus-tag">+60 BONUS</span>
+            <h3>600 COINS</h3>
+            <div class="price">฿299.00</div>
+            <button class="buy-btn" onclick="location.href='ใส่ลิงก์299บาทตรงนี้'">BUY NOW</button>
+        </div>
+
+        <!-- Package 1000 -->
+        <div class="coin-card">
+            <span class="bonus-tag">+150 BONUS</span>
+            <h3>1,000 COINS</h3>
+            <div class="price">฿499.00</div>
+            <button class="buy-btn" onclick="location.href='ใส่ลิงก์499บาทตรงนี้'">BUY NOW</button>
+        </div>
+    </div>
+
+</body>
+</html>
